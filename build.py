@@ -81,7 +81,7 @@ def parse_data():
         'e': events,
         'n': newsletters,
         'by': by_year,
-        'tc': dict(types_count.most_common(15)),
+        'tc': dict(types_count.most_common()),
         'vby': dict(sorted(virtual_by_year.items())),
         'bm': {m: by_month.get(m, 0) for m in month_names},
         'fc': dict(Counter(n['f'] for n in newsletters)),
